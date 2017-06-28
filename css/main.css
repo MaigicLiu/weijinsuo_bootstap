@@ -45,6 +45,109 @@ fieldset[disabled] .btn-weijinsuo.active {
     background-color: #FFFFFF;
 }
 
+.navbar-magic {
+    background-color: #fff;
+    border-color: #f5f5f5;
+    /* height: 50px; */
+}
+.navbar-magic .navbar-brand {
+    color: #777;
+}
+.navbar-magic .navbar-brand:hover,
+.navbar-magic .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-magic .navbar-text {
+    color: #777;
+}
+.navbar-magic .navbar-nav > li > a {
+    color: #777;
+    line-height: 50px;
+    font-size: 14px;
+}
+.navbar-magic .navbar-nav > li > a:hover,
+.navbar-magic .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+.navbar-magic .navbar-nav > .active > a,
+.navbar-magic .navbar-nav > .active > a:hover,
+.navbar-magic .navbar-nav > .active > a:focus {
+    color: #555;
+    /* background-color: transparent; */
+    border-bottom: 2px solid #e92322;
+}
+.navbar-magic .navbar-nav > .disabled > a,
+.navbar-magic .navbar-nav > .disabled > a:hover,
+.navbar-magic .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-magic .navbar-toggle {
+    border-color: #ddd;
+}
+.navbar-magic .navbar-toggle:hover,
+.navbar-magic .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.navbar-magic .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-magic .navbar-collapse,
+.navbar-magic .navbar-form {
+    border-color: #e7e7e7;
+}
+.navbar-magic .navbar-nav > .open > a,
+.navbar-magic .navbar-nav > .open > a:hover,
+.navbar-magic .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .navbar-magic .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-magic .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-magic .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-magic .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-magic .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-magic .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-magic .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-magic .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-magic .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-magic .navbar-link {
+    color: #777;
+}
+.navbar-magic .navbar-link:hover {
+    color: #333;
+}
+.navbar-magic .btn-link {
+    color: #777;
+}
+.navbar-magic .btn-link:hover,
+.navbar-magic .btn-link:focus {
+    color: #333;
+}
+.navbar-magic .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-magic .btn-link:hover,
+.navbar-magic .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-magic .btn-link:focus {
+    color: #ccc;
+}
+
+
 
 @font-face {
     font-family: 'magic';
@@ -70,8 +173,8 @@ fieldset[disabled] .btn-weijinsuo.active {
 
 [class^="icon-"],
 [class*=" icon-"]{
-        font-family: magic;
-        font-style: normal;
+    font-family: magic;
+    font-style: normal;
 }
 
 
@@ -80,7 +183,8 @@ fieldset[disabled] .btn-weijinsuo.active {
 }
 .top > .row > div + div {border-left: 1px solid #c0c0c0}
 .top > .row > div{line-height: 40px;height: 40px;font-size: 12px;color:#888;}
-#header a {
+.top a ,
+.nav-weijinsuo a{
     color: #888;
     font-size: 12px;
 }
@@ -98,4 +202,18 @@ fieldset[disabled] .btn-weijinsuo.active {
     left: 50%;
     margin-left: -60px;
     display: none;
+    z-index: 1001;
+}
+#header .nav-weijinsuo{border-top: 1px solid #c0c0c0;}
+#header .icon-icon{
+    font-size: 50px;
+    color: #E92322;
+    line-height: 50px;
+    vertical-align: middle;
+}
+#header .icon-logo{
+    font-size: 32px;
+    color: #888;
+    line-height: 50px;
+    vertical-align: middle;
 }
