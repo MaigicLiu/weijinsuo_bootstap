@@ -150,7 +150,11 @@ fieldset[disabled] .navbar-magic .btn-link:focus {
     color: #ccc;
 }
 
+/* /自定义bootstrap*/
 
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
 
 @font-face {
     font-family: 'magic';
@@ -226,9 +230,16 @@ fieldset[disabled] .navbar-magic .btn-link:focus {
 /*广告轮播*/
 
 .ad-owl  .item > .owl{
-    height: 410px;
+
     background-position: center center;
 
+}
+
+@media (min-width: 768px) {
+    .ad-owl  .item > .owl{
+        height: 410px;
+    }
+    
 }
 .ad-owl{margin-bottom: 70px;}
 
@@ -243,6 +254,14 @@ fieldset[disabled] .navbar-magic .btn-link:focus {
     font-size: 30px;
     color: #111;
 }
-.pay-guarantee > .container a{/* display: block; */text-decoration: none;}
-.pay-guarantee > .container a:hover{text-decoration: none;}
+.pay-guarantee > .container a{/* display: block; */text-decoration: none;color:#666;}
+.pay-guarantee > .container a:hover{text-decoration: none; color:#666;}
+.pay-guarantee > .container .row > [class ^= 'col-md-'] {padding-top: 20px;padding-bottom: 20px;}
 /*/支付保障*/
+
+.yuyue-words{border-top: 1px solid #c0c0c0}
+.icon-uniE905:before {
+    content: "\e905";
+    font-size: 14px;
+}
+.yuyue-words > .container p {padding-top: 20px;/* line-height: 10px; */font-size: 14px;}
