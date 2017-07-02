@@ -12,7 +12,7 @@ $(function(){
                 if(screenW){
                     $dom.html('<img class="img-responsive" src="./img/slide_0'+ i +'_640x340.jpg" > ');
                 }else{
-console.log($dom.css('backgroundImage'));
+                    console.log($dom.css('backgroundImage'));
                     if($dom.css('backgroundImage') == 'none'){
                         $dom.css('backgroundImage','url("./img/slide_0'+ i +'_2000x410.jpg")');
                         console.log(11);

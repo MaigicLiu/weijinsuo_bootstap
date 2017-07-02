@@ -150,6 +150,40 @@ fieldset[disabled] .navbar-magic .btn-link:focus {
     color: #ccc;
 }
 
+
+.panel-magic {
+    border-color: #ddd;
+}
+.panel-magic > .panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    width: 120px;
+    float: right;
+    padding: 0;
+    height: 150px;
+}
+
+.panel-magic > .panel-body {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    float: left;
+    margin-right: 120px;
+    height: 150px;
+    /* width: 100px; */
+}
+.panel-magic > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+.panel-magic > .panel-heading .badge {
+    color: #f5f5f5;
+    background-color: #333;
+}
+.panel-magic > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #ddd;
+}
+
 /* /自定义bootstrap*/
 
 body {
@@ -241,7 +275,7 @@ body {
     }
     
 }
-.ad-owl{margin-bottom: 70px;}
+.ad-owl  .item > .owl > img {width: 100%}
 
 
 /*/广告轮播*/
@@ -264,4 +298,20 @@ body {
     content: "\e905";
     font-size: 14px;
 }
-.yuyue-words > .container p {padding-top: 20px;/* line-height: 10px; */font-size: 14px;}
+.yuyue-words > .container p {padding-top: 20px;padding-bottom: 20px;/* line-height: 10px; */font-size: 14px;}
+
+
+/*产品部分*/
+.products{border-top: 1px solid #c0c0c0;    background-color: #f0f0f0;  padding: 40px 0;}
+.products .nav-tabs > li > a {
+    font-size: 16px;
+    color: #555;
+}
+.products .nav-tabs > li.active > a{
+    background-color: transparent;
+    border:none;
+    border-bottom: 4px solid #E92322;
+}
+.products .tab-content > .tab-pane{padding: 20px 0;}
+
+/*/产品部分*/
