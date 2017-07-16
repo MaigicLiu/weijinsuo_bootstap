@@ -153,25 +153,30 @@ fieldset[disabled] .navbar-magic .btn-link:focus {
 
 .panel-magic {
     border-color: #ddd;
+    /* background: #ddd; */
+    border-radius: 11px;
 }
 .panel-magic > .panel-heading {
-    color: #333;
-    background-color: #f5f5f5;
+    /* color: #333; */
+    /* background-color: #f5f5f5; */
     border-color: #ddd;
     width: 120px;
     float: right;
     padding: 0;
     height: 150px;
+    text-align: center;
+    /* overflow: hidden; */
 }
 
 .panel-magic > .panel-body {
-    color: #333;
-    background-color: #f5f5f5;
+    /* color: #333; */
+    /* background-color: #f5f5f5; */
     border-color: #ddd;
-    float: left;
+    /* float: left; */
     margin-right: 120px;
     height: 150px;
     /* width: 100px; */
+    border-right: 1px dashed #c0c0c0;
 }
 .panel-magic > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: #ddd;
@@ -185,7 +190,8 @@ fieldset[disabled] .navbar-magic .btn-link:focus {
 }
 
 /* /自定义bootstrap*/
-
+.fl{float: left}
+.fr{float: right}
 body {
     font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
 }
@@ -313,5 +319,31 @@ body {
     border-bottom: 4px solid #E92322;
 }
 .products .tab-content > .tab-pane{padding: 20px 0;}
+.products .tab-content .panel-magic.active{background-color: #e92322;color: #fff;}
+.products .tab-content .panel-magic .panel-body h3{padding: 10px 0;font-size: 16px;margin: 0;}
+.products .tab-content .panel-magic .panel-body p {margin: 0;}
+.clear-both{clear: both;}
+.products .tab-content .panel-magic .panel-heading{
+    position: relative;}
+.products .tab-content .panel-magic .panel-heading::before,
+.products .tab-content .panel-magic .panel-heading::after{
+    content:'';
+    background-color: #f0f0f0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+}
+.products .tab-content .panel-magic .panel-heading::before{
+    top: -8px;
+    left: -8px;
+    box-shadow: 0px -3px 1px #ccc inset;
+}
+.products .tab-content .panel-magic .panel-heading::after{
+    /*botttom: 3px;*/
+    left: -8px;
+    bottom: -8px;
+    box-shadow: 0px 3px 1px #ccc inset;
+}
 
 /*/产品部分*/
