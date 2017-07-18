@@ -323,8 +323,42 @@ body {
 .products .tab-content .panel-magic .panel-body h3{padding: 10px 0;font-size: 16px;margin: 0;}
 .products .tab-content .panel-magic .panel-body p {margin: 0;}
 .clear-both{clear: both;}
+.products .tab-content .panel-magic .panel-body::before{
+    content:"\e915";
+    position: absolute;
+    font-size: 56px;
+    font-family: magic;
+    top: -11px;
+    left: 16px;
+    color: #e92322;
+}
+.products .tab-content .panel-magic.active .panel-body::before{color: #fff;}
+.products .tab-content .panel-magic .panel-body .ticket {overflow: hidden}
 .products .tab-content .panel-magic .panel-heading{
-    position: relative;}
+    position: relative;
+    text-align: center;
+}
+.products .tab-content .panel-magic .panel-heading .content sub{font-size: 14px;}
+.products .tab-content .panel-magic .panel-heading .content{padding-top: 50px }
+.products .tab-content .panel-magic .panel-heading .content p{font-size: 32px;/* padding-top: 50px */margin: 0;}
+.products .tab-content .panel-magic .panel-heading .tooltips{
+    position: absolute;
+    top:20px;
+    text-align: center;
+    width: 100%;
+}
+.products .tab-content .panel-magic .panel-heading  i{
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border:1px solid #e92322;
+    font-style: normal;
+    color: #e92322;
+    position: absolute;
+    top:20px;
+}
+.products .tab-content .panel-magic .panel-heading  i.shanghai{left: 20px}
+.products .tab-content .panel-magic .panel-heading  i.shanghai{border:1px solid #399;color: #399;}
 .products .tab-content .panel-magic .panel-heading::before,
 .products .tab-content .panel-magic .panel-heading::after{
     content:'';

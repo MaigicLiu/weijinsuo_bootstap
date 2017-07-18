@@ -197,7 +197,7 @@
         </div>
     </section>
     <!--/支付保障-->
-
+<a href="javascript:offset()">ssss</a>
 
     <section class="yuyue-words">
         <div class="container">
@@ -224,13 +224,117 @@
                 <li role="presentation"><a href="#products_page4" aria-controls="products_page4" role="tab" data-toggle="tab">微投资</a></li>
                 <li role="presentation"><a href="#products_page4" aria-controls="products_page4" role="tab" data-toggle="tab">微投资</a></li>
                 <li role="presentation"><a href="#products_page4" aria-controls="products_page4" role="tab" data-toggle="tab">微投资</a></li>
-                <li role="presentation" class="pull-right"><a href="#products_page4" aria-controls="products_page4" role="tab" data-toggle="tab">更多</a></li>
+                <li role="presentation" class="pull-right hidden-sm hidden-xs"><a href="#products_page4" aria-controls="products_page4" role="tab" data-toggle="tab">更多</a></li>
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active fade in" id="products_page1">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="panel panel-magic active ">
+                                    <div class="panel-heading">
+                                        <div class="content">
+                                            <p> 8<sub>%</sub></p>
+                                            <div>年利率</div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h3>新手体验表0008期</h3>
 
+                                        <div class="ticket clearfix">
+                                            <p class="fl">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                            <p class="fr">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                        </div>
+
+                                        <div class="ticket clearfix">
+                                            <p class="fl">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                            <p class="fr">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="panel panel-magic  ">
+                                    <div class="panel-heading">
+                                        <div class="content">
+                                            <p> 8<sub>%</sub></p>
+                                            <div>年利率</div>
+                                        </div>
+                                            <i  data-toggle="tooltip" data-placement="top" title="Beijing welcome">京</i>
+                                            <i class="shanghai" data-toggle="tooltip" data-placement="top" title="shanghai welcome">沪</i>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h3>新手体验表0008期</h3>
+
+                                        <div class="ticket ">
+                                            <p class="fl">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                            <p class="fr">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                        </div>
+
+                                        <div class="ticket ">
+                                            <p class="fl">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                            <p class="fr">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="panel panel-magic  ">
+                                    <div class="panel-heading">Panel heading without title</div>
+                                    <div class="panel-body">
+                                        <h3>新手体验表0008期</h3>
+
+                                        <div class="ticket ">
+                                            <p class="fl">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                            <p class="fr">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                        </div>
+
+                                        <div class="ticket ">
+                                            <p class="fl">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                            <p class="fr">
+                                                起步价<br>
+                                                1000.00万
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <div class="panel panel-magic active ">
                         <div class="panel-heading">Panel heading without title</div>
                         <div class="panel-body">
@@ -272,10 +376,24 @@
     <section></section>
     <section></section>
 
-    <footer></footer>
+    <footer>
+        <a id='target' href="javascript:void (0)" onclick="aa()">dsaaaaaaaaaaaa</a>
+    </footer>
 
     <script  src="lib/jquery/jquery.js"></script>
     <script src="lib/bootstrap/js/bootstrap.js"></script>
     <script src="js/main.js"></script>
+<script>
+    var off = $('#target').offset().top;
+    console.log(off);
+
+    function offset(){
+        console.log(test);
+        $('html, body').animate({
+            scrollTop: $('#target').offset().top
+        }, 1000);
+        return false;
+    }
+</script>
 </body>
 </html>

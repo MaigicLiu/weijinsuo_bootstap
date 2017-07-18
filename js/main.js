@@ -29,3 +29,11 @@ $(function(){
     //resize();
     $(window).on('resize',resizes).trigger('resize');
 });
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+var aa = function(){
+    console.log(111);
+}
